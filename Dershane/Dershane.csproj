@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90B19890-E768-46A1-BDC1-5E1072AC8FA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dershane</RootNamespace>
+    <AssemblyName>Dershane</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdvisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdvisor.Designer.cs">
+      <DependentUpon>FrmAdvisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdvisorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdvisorDetay.Designer.cs">
+      <DependentUpon>FrmAdvisorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAytSonucları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAytSonucları.Designer.cs">
+      <DependentUpon>FrmAytSonucları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAytTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAytTakip.Designer.cs">
+      <DependentUpon>FrmAytTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNetSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNetSayfası.Designer.cs">
+      <DependentUpon>FrmNetSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNetTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNetTablosu.Designer.cs">
+      <DependentUpon>FrmNetTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOdemeAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdemeAlma.Designer.cs">
+      <DependentUpon>FrmOdemeAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOdemeTakipTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdemeTakipTablosu.Designer.cs">
+      <DependentUpon>FrmOdemeTakipTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenci.Designer.cs">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciDetay.Designer.cs">
+      <DependentUpon>FrmOgrenciDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciGüncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciGüncelleme.Designer.cs">
+      <DependentUpon>FrmOgrenciGüncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciKayıtYapma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciKayıtYapma.Designer.cs">
+      <DependentUpon>FrmOgrenciKayıtYapma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTytSonucları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTytSonucları.Designer.cs">
+      <DependentUpon>FrmTytSonucları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTytTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTytTakip.Designer.cs">
+      <DependentUpon>FrmTytTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖğrenciGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖğrenciGörüntüle.Designer.cs">
+      <DependentUpon>FrmÖğrenciGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdvisor.resx">
+      <DependentUpon>FrmAdvisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdvisorDetay.resx">
+      <DependentUpon>FrmAdvisorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAytSonucları.resx">
+      <DependentUpon>FrmAytSonucları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAytTakip.resx">
+      <DependentUpon>FrmAytTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNetSayfası.resx">
+      <DependentUpon>FrmNetSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNetTablosu.resx">
+      <DependentUpon>FrmNetTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdemeAlma.resx">
+      <DependentUpon>FrmOdemeAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdemeTakipTablosu.resx">
+      <DependentUpon>FrmOdemeTakipTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenci.resx">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciDetay.resx">
+      <DependentUpon>FrmOgrenciDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciGüncelleme.resx">
+      <DependentUpon>FrmOgrenciGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciKayıtYapma.resx">
+      <DependentUpon>FrmOgrenciKayıtYapma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTytSonucları.resx">
+      <DependentUpon>FrmTytSonucları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTytTakip.resx">
+      <DependentUpon>FrmTytTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖğrenciGörüntüle.resx">
+      <DependentUpon>FrmÖğrenciGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
